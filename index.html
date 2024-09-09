@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/nav-hero.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/Features.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/Services.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/Shop.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/Services2.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/Blog.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/Subscripe.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/arrivails.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/About-contact.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/footer.css" />
+</head>
+
+<body>
+
+  <!--------------
+   Nav 
+   -------------->
+
+<nav class="navbar">
+    <div class="left-side">
+        <h1>Bri3mo</h1>
+    </div>
+
+    <div class="middle-side">
+        <ul  class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#About">Contact</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+          &#9776;
+      </div>
+    </div>
+
+    <!-- <div class="hamburger" id="hamburger">
+      &#9776;
+  </div> -->
+
+    <div class="right-side">
+        <div id="cart-button">
+            <a href="#" aria-label="View cart">
+                <i class="fas fa-shopping-bag"></i> (<span id="cart-count">0</span>)
+            </a>
+        </div>
+    </div>
+
+    <div id="cart" class="cart-slide">
+        <button id="close-cart" aria-label="Close cart">&times;</button>
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <div class="cart-item">
+                <span class="item-name">Product Name</span>
+                <button class="decrease-btn" aria-label="Decrease quantity">-</button>
+                <span class="item-count">1</span>
+                <button class="increase-btn" aria-label="Increase quantity">+</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+  <!--------------- 
+  Nav End 
+  -------------->
+
+
+  <!--------------
+   Hero
+    ------------->
+
+  <section id="hero">
+    <div class="Hero">
+      <div class="Text-hero">
+        <h3>Trade-in-offer</h3>
+        <h1>
+          Super value deals <br />
+          <span>On all products</span>
+        </h1>
+        <p>Save more With coupons and up to 70% off!</p>
+        <button class="button" data-text="Awesome"><a href="#shop">
+          <span class="actual-text">&nbsp;Shop Now &nbsp;</span>
+          <span aria-hidden="true" class="hover-text">&nbsp;Shop Now&nbsp;</span>
+        </a> </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="advantages">
+      <div class="advantages-container">
+        <img src="./img/features/f1.png" alt="" />
+        <h3>Free Shipping</h3>
+      </div>
+
+      <div class="advantages-container">
+        <img src="./img/features/f2.png" alt="" />
+        <h3>Online Order</h3>
+      </div>
+
+      <div class="advantages-container">
+        <img src="./img/features/f3.png" alt="" />
+        <h3>Save Money</h3>
+      </div>
+
+      <div class="advantages-container">
+        <img src="./img/features/f4.png" alt="" />
+        <h3>Promotions</h3>
+      </div>
+
+      <div class="advantages-container">
+        <img src="./img/features/f5.png" alt="" />
+        <h3>Happy Sell</h3>
+      </div>
+
+      <div class="advantages-container">
+        <img src="./img/features/f6.png" alt="" />
+        <h3>F24/7 Support</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-------------- 
+  Hero End
+   --------------->
+
+
+  <!-------------
+   SerVices 
+   -------------->
+
+  <section id="SerVices">
+    <div class="SErvices">
+      <h2>Repair Services</h2>
+      <h1>Up to <span>70% Off</span> — All t-Shirts and Accessories</h1>
+      <button class="Btn">
+      </button>
+    </div>
+  </section>
+
+ <!--------------
+ SerVices  End
+ ----------->
+
+
+  <!--------------
+ Shop
+ ----------->
+
+  <section id="shop">
+    <div class="Shop">
+      <div class="HEADER">
+        <h1>Featured Products</h1>
+        <p>Summer Collection New Modern Design</p>
+      </div>
+
+      <div class="button-group">
+        <!-- Create the buttons -->
+        <button class="btn active" data-target="all">All</button>
+        <button class="btn" data-target="shirt">Shirt</button>
+        <button class="btn" data-target="trouser">Trouser</button>
+        <button class="btn" data-target="dress">Dress</button>
+        <button class="btn" data-target="t-shirt">T-Shirt</button>
+        <div class="PRODUCTS">
+
+          <div class="CONTAINER content-container" data-content="shirt">
+            <div class="product-img">
+              <img src="./img/products/f1.jpg" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>Shirt</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$89</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="1" data-name="Shirt"
+                  data-image="./img/products/f1.jpg"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="shirt">
+            <div class="product-img">
+              <img src="./img/products/f2.jpg" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>Shirt</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$97</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="2" data-name="Shirt"
+                  data-image="./img/products/f2.jpg"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="shirt">
+            <div class="product-img">
+              <img src="./img/products/f3.jpg" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>Shirt</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$90</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="3" data-name="Shirt"
+                  data-image="./img/products/f3.jpg"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="shirt">
+            <div class="product-img">
+              <img src="./img/products/f4.jpg" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>Shirt</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$96</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="4" data-name="Shirt"
+                  data-image="./img/products/f4.jpg"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="shirt">
+            <div class="product-img">
+              <img src="./img/products/f5.jpg" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>Shirt</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$95</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="5" data-name="Shirt"
+                  data-image="./img/products/f5.jpg"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="shirt">
+            <div class="product-img">
+              <img src="./img/products/f6.jpg" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3 class="price">Shirt</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$92</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="6" data-name="Shirt"
+                  data-image="./img/products/f6.jpg"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="trouser">
+            <div class="product-img">
+              <img src="./img/products/f7.jpg" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>Trouser</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$74</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="7" data-name="Trouser"
+                  data-image="./img/products/f7.jpg"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="trouser">
+            <div class="product-img">
+              <img src="./img/products/f9.png" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>Trouser</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$70</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="13" data-name="Trouser"
+                  data-image="./img/products/f9.png"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="trouser">
+            <div class="product-img">
+              <img src="./img/products/f10.png" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>Trouser</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$76</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="12" data-name="Trouser"
+                  data-image="./img/products/f10.png"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="trouser">
+            <div class="product-img">
+              <img src="./img/products/f11.jpg" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>Trouser</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$78</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="11" data-name="Trouser"
+                  data-image="./img/products/f11.jpg"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="t-shirt">
+            <div class="product-img">
+              <img src="./img/products/f12.png" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>T-Shirt</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$65</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="24" data-name="T-Shirt"
+                  data-image="./img/products/f12.png"></i></span>
+            </div>
+          </div>
+          <div class="CONTAINER content-container" data-content="t-shirt">
+            <div class="product-img">
+              <img src="./img/products/f13.png" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>T-Shirt</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$60</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="23" data-name="T-Shirt"
+                  data-image="./img/products/f13.png"></i></span>
+            </div>
+          </div>
+          <div class="CONTAINER content-container" data-content="t-shirt">
+            <div class="product-img">
+              <img src="./img/products/f14.png" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>T-Shirt</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$66</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="22" data-name="T-Shirt"
+                  data-image="./img/products/f14.png"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="t-shirt">
+            <div class="product-img">
+              <img src="./img/products/f15.png" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>T-Shirt</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$67</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="21" data-name="T-Shirt"
+                  data-image="./img/products/f15.png"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="t-shirt">
+            <div class="product-img">
+              <img src="./img/products/f20.png" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>T-Shirt</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$67</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="20" data-name="T-Shirt"
+                  data-image="./img/products/f20.png"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="dress">
+            <div class="product-img">
+              <img src="./img/products/f8.jpg" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>Dress</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$79</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="14" data-name="Dress"
+                  data-image="./img/products/f8.jpg"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="dress">
+            <div class="product-img">
+              <img src="./img/products/f16.png" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>Dress</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$85</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="16" data-name="Dress"
+                  data-image="./img/products/f16.png"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="dress">
+            <div class="product-img">
+              <img src="./img/products/f17.png" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>Dress</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$86</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="17" data-name="Dress"
+                  data-image="./img/products/f17.png"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="dress">
+            <div class="product-img">
+              <img src="./img/products/f18.png" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>Dress</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$88</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="18" data-name="Dress"
+                  data-image="./img/products/f18.png"></i></span>
+            </div>
+          </div>
+
+          <div class="CONTAINER content-container" data-content="dress">
+            <div class="product-img">
+              <img src="./img/products/f19.png" alt="" />
+            </div>
+            <p>adidas</p>
+            <h3>Dress</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price-cart">
+              <p class="price">$93</p>
+              <span><i class="fas fas fa-shopping-cart for" data-id="19" data-name="Dress"
+                  data-image="./img/products/f19.png"></i></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!----------------
+   Shop End
+   ------------>
+
+  <!----------------
+   services-2 
+   ------------>
+
+  <section id="services">
+    <div class="Services">
+      <h2>Repair Services</h2>
+      <h1>Up to <span>70% Off</span> — All t-Shirts and Accessories</h1>
+      <button class="Btn">
+      </button>
+    </div>
+  </section>
+
+  <!----------------
+   services-2 End 
+   ------------>
+
+
+  <!----------------
+   New-arrivals 
+   ------------>
+
+  <section id="New-arrivals">
+    <div class="New-Arrivals">
+      <div class="Headers">
+        <h1>New Arrivals</h1>
+      </div>
+      <div class="CONTAINERs">
+        <div class="product">
+          <div class="product-img">
+            <img src="./img/products/n1.jpg" alt="" />
+          </div>
+          <p>adidas</p>
+          <h3>Shirt</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price-cart">
+            <p class="price">$60</p>
+            <span><i class="fas fas fa-shopping-cart for" data-id="31" data-name="Shirt"
+                data-image="./img/products/n1.jpg"></i></span>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-img">
+            <img src="./img/products/n2.jpg" alt="" />
+          </div>
+          <p>adidas</p>
+          <h3>Shirt</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price-cart">
+            <p class="price">$60</p>
+            <span><i class="fas fas fa-shopping-cart for" data-id="30" data-name="Shirt"
+                data-image="./img/products/n2.jpg"></i></span>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-img">
+            <img src="./img/products/n3.jpg" alt="" />
+          </div>
+          <p>adidas</p>
+          <h3>Shirt</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price-cart">
+            <p class="price">$60</p>
+            <span><i class="fas fas fa-shopping-cart for" data-id="29" data-name="Shirt"
+                data-image="./img/products/n3.jpg"></i></span>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-img">
+            <img src="./img/products/n4.jpg" alt="" />
+          </div>
+          <p>adidas</p>
+          <h3>Shirt</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price-cart">
+            <p class="price">$60</p>
+            <span><i class="fas fas fa-shopping-cart for" data-id="28" data-name="Shirt"
+                data-image="./img/products/n4.jpg"></i></span>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-img">
+            <img src="./img/products/n5.jpg" alt="" />
+          </div>
+          <p>adidas</p>
+          <h3>Shirt</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price-cart">
+            <p class="price">$60</p>
+            <span><i class="fas fas fa-shopping-cart for" data-id="26" data-name="Shirt"
+                data-image="./img/products/n5.jpg"></i></span>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-img">
+            <img src="./img/products/n6.jpg" alt="" />
+          </div>
+          <p>adidas</p>
+          <h3>Trouser</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price-cart">
+            <p class="price">$60</p>
+            <span><i class="fas fas fa-shopping-cart for" data-id="25" data-name="Trouser"
+                data-image="./img/products/n6.jpg"></i></span>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-img">
+            <img src="./img/products/n7.jpg" alt="" />
+          </div>
+          <p>adidas</p>
+          <h3>Shirt</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price-cart">
+            <p class="price">$60</p>
+            <span><i class="fas fas fa-shopping-cart for" data-id="7" data-name="Shirt"
+                data-image="./img/products/n7.jpg"></i></span>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-img">
+            <img src="./img/products/n8.jpg" alt="" />
+          </div>
+          <p>adidas</p>
+          <h3>Shirt</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price-cart">
+            <p class="price">$60</p>
+            <span><i class="fas fas fa-shopping-cart for" data-id="8" data-name="Shirt"
+                data-image="./img/products/n8.jpg"></i></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!----------------
+   New-arrivals  End
+   ------------>
+
+
+  <!----------------
+   Blog  
+   ------------>
+
+  <section id="blog">
+    <div class="Blog">
+      <div class="bnm">
+
+        <div class="bnm-r">
+          <h2>Crazy deals</h2>
+          <h1>buy 1 get 1 free</h1>
+          <p>The best classic dress is on sale at Caro</p>
+          <button
+            class="px-8 z-30 py-4 bg-rose-400 rounded-md text-white relative font-semibold font-sans after:-z-20 after:absolute after:h-1 after:w-1 after:bg-rose-800 after:left-5 overflow-hidden after:bottom-0 after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 [text-shadow:3px_5px_2px_#be123c;] hover:[text-shadow:2px_2px_2px_#fda4af] text-2xl">
+            Learn More</button>
+        </div>
+
+        <div class="bnm-t">
+          <h2>Spring/Summer</h2>
+          <h1>Upcomming season</h1>
+          <p>The best Classic dress is on sale at cara</p>
+          <button> Collection</button>
+        </div>
+
+      </div>
+
+      <div class="end-blog">
+        <div class="first">
+          <h1>SEASONAL SALE</h1>
+          <h2>Winter Collection -50% OFF</h2>
+        </div>
+
+        <div class="second">
+          <h1>NEW FOOTWEAR COLLECTION</h1>
+          <h2>Spring / Summer 2024</h2>
+        </div>
+
+        <div class="third">
+          <h1>T-SHIRTS</h1>
+          <h2>New Trendy PrihIs</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!----------------
+   Blog  End
+   ------------>
+
+
+  <!----------------
+   Contact-About  
+   ------------>
+
+  <section id="About">
+    <div class="About">
+      <h1>Contact And About</h1>
+      <div class="About-1">
+        <div class="Contact">
+          <div class="form-card1">
+            <div class="form-card2">
+              <form class="form">
+                <p class="form-heading">Get In Touch</p>
+
+                <div class="form-field">
+                  <input required="" placeholder="Name" class="input-field" type="text" />
+                </div>
+
+                <div class="form-field">
+                  <input required="" placeholder="Email" class="input-field" type="email" />
+                </div>
+
+                <div class="form-field">
+                  <input required="" placeholder="Subject" class="input-field" type="text" />
+                </div>
+
+                <div class="form-field">
+                  <textarea required="" placeholder="Message" cols="30" rows="3" class="input-field"
+                    style="resize: none;"></textarea>
+                </div>
+
+                <button class="sendMessage-btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="card">
+          <div class="img">
+            &nbsp;Bri3mo
+          </div>
+          <span>About We</span>
+          <p class="info">I’m Walter, a multidisciplinary designer who focuses on telling my clients’ stories visually,
+            through enjoyable and meaningful experiences. I specialize in responsive websites and functional user
+            interfaces.</p>
+          <div class="share">
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-github" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                </path>
+              </svg></a>
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-twitter" viewBox="0 0 16 16">
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+                </path>
+              </svg></a>
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-instagram" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                </path>
+              </svg></a>
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-youtube" viewBox="0 0 16 16">
+                <path
+                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z">
+                </path>
+              </svg></a>
+          </div>
+          <button>Resume</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------
+   Contact-About  End
+   ------------>
+
+
+  <!----------------
+Subscribe   
+------------>
+
+  <section>
+    <div class="Subscribe">
+
+      <div class="left">
+        <h2>Sign Up For Newsletters</h2>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+      </div>
+
+      <div class="right">
+        <input type="email" class="input" id="Email" name="Email" placeholder="Enter Your Email" autocomplete="off">
+        <input class="button--submit" value="Subscribe" type="submit">
+      </div>
+
+    </div>
+  </section>
+
+  <!----------------
+Subscribe  End  
+------------>
+
+
+  <!--------------
+ Footer
+ ----------->
+  <footer>
+    <h1>Bri3mo</h1>
+    <div class="footer-container">
+      <div class="footer-segment">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><a href="mailto:support@example.com">mohamedemad.front <br> @gmail.com</a></li>
+          <li><a href="tel:+1234567890">+155 804 3651</a></li>
+          <li><a href="#">123 Street, City, Country</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-segment">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">Company Info</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-segment">
+        <h3>My Account</h3>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Orders</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-segment">
+        <h3>Install App</h3>
+        <ul class="app-links">
+          <li><a href="#"><img src="./img/pay/play.jpg" alt="Get it on Google Play"></a></li>
+          <li><a href="#"><img src="./img/pay/app.jpg" alt="Get it on Google Play"></a></li>
+          <li><a href="#"><img src="./img/pay/pay.png" alt="Download on the App Store"></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="social-media">
+        <button class="button">
+          <svg viewBox="0 0 24 24" fill="none" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" class="w-6 h-6 text-gray-800 dark:text-white">
+            <path clip-rule="evenodd"
+              d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+              fill-rule="evenodd" fill="currentColor"></path>
+          </svg>
+        </button>
+        <button class="button">
+          <svg viewBox="0 0 24 24" fill="none" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" class="w-6 h-6 text-gray-800 dark:text-white">
+            <path clip-rule="evenodd"
+              d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
+              fill-rule="evenodd" fill="currentColor"></path>
+            <path
+              d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z"
+              fill="currentColor"></path>
+          </svg>
+        </button>
+
+        <button class="button">
+          <svg viewBox="0 0 24 24" fill="currentColor" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" class="w-6 h-6 text-gray-800 dark:text-white">
+            <path clip-rule="evenodd"
+              d="M22 5.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.343 8.343 0 0 1-2.605.981A4.13 4.13 0 0 0 15.85 4a4.068 4.068 0 0 0-4.1 4.038c0 .31.035.618.105.919A11.705 11.705 0 0 1 3.4 4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 6.1 13.635a4.192 4.192 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 2 18.184 11.732 11.732 0 0 0 8.291 20 11.502 11.502 0 0 0 19.964 8.5c0-.177 0-.349-.012-.523A8.143 8.143 0 0 0 22 5.892Z"
+              fill-rule="evenodd"></path>
+          </svg>
+        </button>
+
+        <button class="button">
+          <svg viewBox="0 0 24 24" fill="currentColor" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" class="w-6 h-6 text-gray-800 dark:text-white">
+            <path clip-rule="evenodd"
+              d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
+              fill-rule="evenodd"></path>
+          </svg>
+        </button>
+
+        <button class="button">
+          <svg viewBox="0 0 24 24" fill="currentColor" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" class="w-6 h-6 text-gray-800 dark:text-white">
+            <path clip-rule="evenodd"
+              d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+              fill-rule="evenodd"></path>
+          </svg>
+        </button>
+
+
+      </div>
+      <p>&copy; 2024 Your Shop. All rights reserved by Mohamed Emad.</p>
+
+    </div>
+  </footer>
+
+  <!--------------
+ Footer End
+ ----------->
+
+  <script src="main.js"></script>
+</body>
+
+</html>

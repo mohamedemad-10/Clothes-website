@@ -1,0 +1,445 @@
+/* ================================
+ Navbar Styles
+ ================================= */
+ .navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #e3e6f3ad;
+    display: flex;
+    justify-content: space-around; /* Aligns logo, hamburger, and cart */
+    align-items: center;
+    position: static;
+    box-shadow: 0px 20px 30px -20px #000;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Logo styles */
+.navbar .left-side h1 {
+    font-family: "Oleo Script", cursive;
+    font-size: 45px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    font-size: 2em;
+    color: #000;
+    cursor: pointer;
+    margin: 0 auto; /* Center the hamburger icon */
+}
+
+/* Navigation links styles */
+.navbar .middle-side {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .middle-side .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.navbar .middle-side .nav-links li {
+    position: relative;
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #000;
+    font-style: italic;
+    margin-bottom: 2px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.5s ease;
+}
+
+.navbar .middle-side .nav-links li a {
+    color: #000;
+    border: none;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.navbar .middle-side .nav-links li::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #94c9ca;
+    transition: width 0.3s ease;
+}
+
+.navbar .middle-side .nav-links li:hover::before {
+    width: 100%;
+}
+
+.navbar .middle-side .nav-links li a:hover {
+    color: #94c9ca;
+    padding-bottom: 10px;
+}
+
+.navbar .right-side a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.navbar .right-side i {
+    font-size: 18px;
+    color: #000;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .right-side a:hover {
+    color: #94c9ca;
+}
+
+.navbar .right-side i:hover {
+    color: #94c9ca;
+    transform: rotate(45deg);
+}
+
+/* Cart slide styles */
+.cart-slide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 999999;
+    width: 300px;
+    background-color: #ffffff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    padding: 1rem;
+}
+
+.cart-slide.open {
+    transform: translateX(0);
+}
+
+#close-cart {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 2rem;
+    cursor: pointer;
+    float: right;
+}
+
+/* Cart item styles */
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item-name {
+    flex: 1;
+}
+
+.decrease-btn, .increase-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.item-count {
+    width: 30px;
+    text-align: center;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.cart-item img {
+    width: 70px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.remove-item {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: auto;
+}
+
+/* ================================
+ Navbar Responsive Styles
+ ================================= */
+@media (max-width: 760px) {
+    .navbar {
+        flex-direction: row;
+        padding: 10px;
+        height: auto;
+    }
+
+    .navbar .left-side,
+    .navbar .right-side {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar .middle-side {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        position: relative;
+    }
+
+    .navbar .middle-side .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 260px;
+        gap: 10px;
+        background-color: #eceef7; /* Match the navbar background */
+        padding: 10px;
+        margin-top: 10px;
+        position: absolute;
+        border-radius: 10px;
+        z-index: 999;
+        top: 100%;
+        left: 0;
+        z-index: 10;
+        animation: slideDown 0.3s ease-in-out;
+    }
+
+    .navbar .middle-side .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .navbar .middle-side .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+/* ================================
+ Hero  Styles
+================================= */
+
+.Hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/hero4.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    /* padding-top: 200px; */
+    /* padding-left: 120px; */
+    align-items: center;
+    background-color: #e3e6f3;
+    display: block;
+}
+
+.Hero .Text-hero{
+    position: relative;
+    top: 30%;
+    left: 10%;
+}
+
+.Hero h3 {
+    font-family: "Oleo Script", cursive;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Hero h1 {
+    font-family: "Oleo Script", cursive;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Hero h1 span {
+    color: #238078;
+}
+
+.Hero p {
+    color: #cdd1dd;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* button styling */
+.button {
+    --border-right: 6px;
+    --text-stroke-color: #238078;
+    --animation-color: #00ff6a;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.button a{
+    --text-stroke-color: #238078;
+    --animation-color: #00ff6a;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    color: transparent;
+    text-decoration: none;
+}
+
+/* this is the text, when you hover on button */
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* hover */
+.button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+/* ================================
+ Hero Responsive  Styles
+================================= */
+@media screen and (max-width: 768px){
+    .Hero h3 {
+        font-family: "Oleo Script", cursive;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: left;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .Hero h1 {
+        font-family: "Oleo Script", cursive;
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: left;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .Hero h1 span {
+        color: #238078;
+    }
+    
+    .Hero p {
+        color: #cdd1dd;
+        font-size: 19px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .Hero h3 {
+        font-size: 30px;
+    }
+    
+    .Hero h1 {
+        font-size: 40px;
+    }
+    
+    .Hero p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .Hero h3 {
+        font-size: 35px;
+    }
+    
+    .Hero h1 {
+        font-size: 36px;
+    }
+    
+    
+    .Hero p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 326px){
+    .Hero h3 {
+        font-size: 30px;
+    }
+    
+    .Hero h1 {
+        font-size: 33px;
+    }
+    
+    
+    .Hero p {
+        font-size: 10px;
+    }
+}

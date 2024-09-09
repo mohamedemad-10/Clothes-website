@@ -1,0 +1,392 @@
+
+/* ================================
+ Blog  Styles
+================================= */
+.Blog {
+    width: 100%;
+    display: block;
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+
+.Blog .bnm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.Blog .bnm .bnm-r {
+    width: 40%;
+    height: 400px;
+    background-color: #000;
+    background-image: url(./img/banner/b17.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    background-position: center;
+    position: relative;
+    z-index: 99;
+}
+
+.Blog .bnm .bnm-r h2 {
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 120px;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    color: #ffffff96;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Blog .bnm .bnm-r h1 {
+    font-family: "Oleo Script", cursive;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Blog .bnm .bnm-r p {
+    font-family: "Oleo Script", cursive;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #ffffffcf;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Blog .bnm .bnm-r button {
+    --color: #00A97F;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: all .5s ease;
+    margin-left: 40px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.Blog .bnm .bnm-r button::after,
+.Blog .bnm .bnm-r button::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+
+.Blog .bnm .bnm-r button::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.Blog .bnm .bnm-r button:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.Blog .bnm .bnm-r button:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+
+.Blog .bnm .bnm-r button:hover {
+    color: #fff;
+}
+
+.Blog .bnm .bnm-r button:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+
+.Blog .bnm .bnm-t {
+    width: 40%;
+    height: 400px;
+    background-color: #000;
+    background-image: url(./img/banner/b10.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    background-position: center;
+    position: relative;
+    z-index: 99;
+}
+
+.Blog .bnm .bnm-t h2 {
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 120px;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    color: #ffffff96;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Blog .bnm .bnm-t h1 {
+    font-family: "Oleo Script", cursive;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Blog .bnm .bnm-t p {
+    font-family: "Oleo Script", cursive;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #ffffffcf;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Blog .bnm .bnm-t button {
+    --color: #00A97F;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: all .5s ease;
+    margin-left: 40px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.Blog .bnm .bnm-t button::after,
+.Blog .bnm .bnm-t button::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+
+.Blog .bnm .bnm-t button::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.Blog .bnm .bnm-t button:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.Blog .bnm .bnm-t button:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+
+.Blog .bnm .bnm-t button:hover {
+    color: #fff;
+}
+
+.Blog .bnm .bnm-t button:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+
+.Blog .end-blog {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.Blog .end-blog .first {
+    width: 25%;
+    height: 250px;
+    background-color: #000;
+    background-image: url(./img/banner/b7.jpg);
+    background-size: cover;
+    align-items: center;
+    border-radius: 5px;
+    background-position: center;
+    position: relative;
+    z-index: 99;
+}
+
+.Blog .end-blog .second {
+    width: 30%;
+    height: 250px;
+    background-color: #000;
+    background-image: url(./img/banner/b4.jpg);
+    background-size: cover;
+    align-items: center;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    z-index: 99;
+}
+
+.Blog .end-blog .third {
+    width: 25%;
+    height: 250px;
+    align-items: center;
+    background-color: #000;
+    background-image: url(./img/banner/b18.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    z-index: 99;
+}
+
+.Blog .end-blog .first h2 {
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    color: rgb(255, 0, 0);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Blog .end-blog .second h2 {
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    color: rgb(255, 0, 0);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Blog .end-blog .third h2 {
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    color: rgb(255, 0, 0);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Blog .end-blog .first h1 {
+    font-family: "Oleo Script", cursive;
+    font-size: 20px;
+    margin-top: 80px;
+    font-weight: 700;
+    margin-left: 50px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Blog .end-blog .second h1 {
+    font-family: "Oleo Script", cursive;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 50px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Blog .end-blog .third h1 {
+    font-family: "Oleo Script", cursive;
+    font-size: 23px;
+    font-weight: 700;
+    margin-left: 50px;
+    margin-top: 80px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+/* ================================
+ Blog Responsive  Styles
+================================= */
+@media screen and (max-width: 611px){
+    .Blog .bnm {
+        flex-direction: column;
+    }
+
+    .Blog .bnm .bnm-r {
+        width: 80%;
+    }
+
+    .Blog .bnm .bnm-r p{
+        font-size: 16px;
+    }
+
+    .Blog .bnm .bnm-t {
+        width: 80%;
+    }
+
+    .Blog .end-blog {
+       flex-direction: column;
+    }
+
+    .Blog .end-blog .first {
+        width: 80%;
+    }
+    
+    .Blog .end-blog .second {
+        width: 80%;
+    }
+    
+    .Blog .end-blog .third {
+        width: 80%;
+    }
+}

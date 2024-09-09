@@ -1,0 +1,222 @@
+/* ================================
+ About  Styles
+================================= */
+.About {
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #000000;
+}
+
+.About h1 {
+    font-family: "Oleo Script", cursive;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(255, 0, 0, 0.5);
+}
+
+.About-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 100px;
+}
+
+/* .About .About-1 .Contact {
+    margin-left: 450px;
+} */
+
+.About .About-1 .Contact .form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: inherit;
+    gap: 10px;
+    padding-inline: 2em;
+    padding-bottom: 0.4em;
+    background-color: #171717;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+.About .About-1 .form-heading {
+    text-align: center;
+    margin: 2em;
+    font-family: "Oleo Script", cursive;
+    font-size: 23px;
+    font-weight: 700;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    color: #64ffda;
+    background-color: transparent;
+    align-self: center;
+}
+
+.About .About-1 .Contact .form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.About .Contact .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ccd6f6;
+    padding-inline: 1em;
+}
+
+.About .Contact .sendMessage-btn {
+    cursor: pointer;
+    margin-bottom: 3em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #64ffda;
+    font-weight: bold;
+    outline: 1px solid #64ffda;
+    transition: all ease-in-out 0.3s;
+}
+
+.About .Contact .sendMessage-btn:hover {
+    transition: all ease-in-out 0.3s;
+    background-color: #64ffda;
+    color: #000;
+    cursor: pointer;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.About .Contact .form-card1 {
+    background-image: linear-gradient(163deg, #64ffda 0%, #64ffda 100%);
+    border-radius: 22px;
+    transition: all 0.3s;
+}
+
+.About .Contact .form-card1:hover {
+    box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+}
+
+.About .Contact .form-card2 {
+    border-radius: 0;
+    transition: all 0.2s;
+}
+
+.About .Contact .form-card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.card {
+    width: 17em;
+    height: 22.5em;
+    background: #171717;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card span {
+    color: white;
+    font-family: "Oleo Script", cursive;
+    font-size: 23px;
+    font-weight: 700;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: block;
+    font-size: 1em;
+}
+
+.card .info {
+    font-weight: 400;
+    color: white;
+    font-family: sans-serif;
+    display: block;
+    line-height: 20px;
+    text-align: center;
+    font-size: 0.72em;
+    margin: 1em;
+}
+
+.card .img {
+    width: 120px;
+    height: 60px;
+    font-family: "Oleo Script", cursive;
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    border-radius: 15px;
+    background: white;
+}
+
+.card .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.card a {
+    color: white;
+    transition: .4s ease-in-out;
+}
+
+.card a:hover {
+    color: red;
+}
+
+.card button {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+}
+
+.card button:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+/* ================================
+ About and contact Responsive  Styles
+================================= */
+@media screen and (max-width: 611px) {
+    .About .About-1 {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .About .About-1 .Contact {
+        margin-left: 0;
+    }
+}

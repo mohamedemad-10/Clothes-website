@@ -1,0 +1,53 @@
+/* ================================
+ Features  Styles
+================================= */
+.advantages{
+    width: 100%;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.advantages .advantages-container{
+    width: 190px;
+    border: 2px solid #cdd1dd;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    padding: 10px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+/* hover */
+.advantages .advantages-container:hover {
+    outline: 2px solid #70bdca;
+    border: none;
+    cursor: pointer;
+    transform: translate(0, -15px);
+    box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.advantages .advantages-container img {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+.advantages .advantages-container h3 {
+    font-family: "Oleo Script", cursive;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+} 

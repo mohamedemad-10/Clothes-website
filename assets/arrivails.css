@@ -1,0 +1,128 @@
+/* ================================
+ New Arrivals  Styles
+================================= */
+.New-Arrivals {
+    width: 100%;
+    display: block;
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+
+.New-Arrivals h1 {
+    font-family: "Oleo Script", cursive;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.New-Arrivals .CONTAINERs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.New-Arrivals .CONTAINERs .product {
+    width: 300px;
+    border: 2px #cdd1dd solid;
+    border-radius: 20px;
+    padding: 10px;
+    height: auto;
+    transition: all .5s;
+}
+
+/* hover */
+.New-Arrivals .CONTAINERs .product:hover {
+    outline: 2px solid #70bdca;
+    border: none;
+    cursor: pointer;
+    box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.New-Arrivals .CONTAINERs .product .product-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.New-Arrivals .CONTAINERs .product .product-img img {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.New-Arrivals .CONTAINERs .product p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    color: #cdd1dd;
+    text-align: left;
+}
+
+.New-Arrivals .CONTAINERs .product h3 {
+    font-family: "Oleo Script", cursive;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: left;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.New-Arrivals .CONTAINERs .product .stars {
+    font-size: 16px;
+    color: #ffd700;
+    margin-top: 5px;
+}
+
+.New-Arrivals .CONTAINERs .product .price-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.New-Arrivals .CONTAINERs .product .price-cart .price {
+    color: #238078;
+}
+
+.New-Arrivals .CONTAINERs .product .price-cart span {
+    background-color: #e3f7f0;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.New-Arrivals .CONTAINERs .product .price-cart span i {
+    color: #238078;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transition: all .5s ease;
+}
+
+.New-Arrivals .CONTAINERs .product .price-cart span i:hover {
+    transform: rotate(45deg);
+}
+/* ================================
+ New Arrivals Responsive  Styles
+================================= */
+@media only screen and (max-width: 326px){
+    .New-Arrivals .CONTAINERs .product{
+        width: 250px;
+    }
+}
